@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+:root 
+{
+    --pricipal: #0A192F;
+    --grey: #545454;
+    --aquamarine: #60C2A5;
+    --gold: #B28550;
+    --gold-dark: #9C6C3D;
+    --bs-primary: #B28550;
+
+    --fuente_principal:'Leelawadee', sans-serif;
+    --fuente_secundaria:'Silka', sans-serif;
+
+    --ani-speed: 2s;
+    --ani-delay: 1s;
+
+}
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    // font-family: $fuente_principal;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: 'Leelawadee';
+    background-color: #141414;
+    user-select: none; //Bloaquear seleccion de texto
+}
+p {
+    // color: $negro;
+    font-size: 2rem;
+    margin: 0;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    // font-family: $fuente_principal;
+    margin: 5rem / 2 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-align: center;
+    
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+li{
+    list-style: none;
+}
+//Fonts
+@font-face {
+    font-family: Leelawadee;
+    src: url('/build/fonts/LEELAWAD.TTF'), 
+         url('/build/fonts/LEELAWDB.TTF');
+}
+         
+@font-face {
+    font-family: Silka;
+    src: url('/build/fonts/silka-regular-webfont.ttf');
+}
+

@@ -1,0 +1,61 @@
+
+.arrow-a{
+    cursor: auto;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    left: 48%;
+    top: 90%;
+    transform-origin: 90% 90%;
+    transform: translate3d(-90%, -90%, 0);
+}
+@media(min-width:768px){
+    .arrow{
+        left: 50%;
+    }
+}
+
+.arrow-first {
+    animation: arrow-movement var(--ani-speed) ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement var(--ani-speed) var(--ani-delay) ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: rgb(19, 18, 18);
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+// Animation
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 85%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}

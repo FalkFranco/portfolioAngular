@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500");
+
+.card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 30rem;
+  height: 40rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #262626;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    &{
+      width: 30rem;
+      height: 40rem;
+    }
+  }
+  @media (min-width: 1080px) {
+    &{
+      width: 30rem;
+      height: 40rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    &{
+      width: 40rem;
+      height: 50rem;
+    }
+  }
+}
+
+
+.card__background,
+.card__shadow,
+.card__info,
+.card__follow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card.hover .card__background,
+.card:hover .card__background {
+  filter: blur(2px);
+  transform: translateY(-10px);
+}
+.card__background {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out, filter 0.2s ease;
+}
+.card.hover .card__shadow,
+.card:hover .card__shadow {
+  opacity: 0.95;
+}
+.card__shadow {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0, #000 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+.card.hover .card__info,
+.card:hover .card__info {
+  transform: translateY(-37px);
+}
+.card__info {
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 15px 10px;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+.card__name {
+  text-transform: capitalize;
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 300;
+  margin-right: 50%;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.95);
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 1080px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    & {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+  
+
+.card__name:after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: var(--gold);
+  margin: 5px 0 3px;
+}
+.card__about,
+.card__description {
+  color: white;
+  margin-top: 8px;
+}
+.card__about {
+  align-self: flex-start;
+  line-height: 14px;
+}
+.card__about .country {
+  text-transform: capitalize;
+}
+.card.hover .card__description,
+.card:hover .card__description {
+  max-height: 400px;
+  opacity: 1;
+}
+.card__description {
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.2s;
+}
+.card.hover .card__follow,
+.card:hover .card__follow {
+  transform: translateY(0);
+}
+.card__follow {
+  top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--gold);
+  transform: translateY(37px);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+}
+.card__follow:hover {
+  background-color: black;
+  border-color: black;
+}
