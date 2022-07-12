@@ -1,0 +1,22 @@
+.social-nav{
+    width: 20px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    right: 40px;
+    position: fixed;
+    z-index: 25;
+    // a{
+    //     color: $grey;
+    // }
+    a:hover{
+        color: var(--gold);
+    }
+    .social-icon i{
+        font-size: 2rem;
+        color: var(--grey);
+    } 
+
+    .social-icon i:hover{
+        color: var(--gold)
+    }
+} 
