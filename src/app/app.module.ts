@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -14,6 +13,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { SocialComponent } from './components/social/social.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { SocialComponent } from './components/social/social.component';
     ContactoComponent,
     ModalComponent,
     SocialComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,4 +19,9 @@ export class NavegacionComponent implements OnInit {
   scrollfunction() {
     (document.documentElement.scrollTop > 1500 ? this.nav_bar = true : this.nav_bar = false) 
   }
+  
+  mobileMenu(): void {
+    // console.log('Anda el menu')
+  }
+  
 }
