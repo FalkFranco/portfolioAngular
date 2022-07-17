@@ -1,0 +1,54 @@
+.modal{
+    box-shadow: 9px 9px 49px -3px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 9px 9px 49px -3px rgba(0,0,0,0.69);
+    -moz-box-shadow: 9px 9px 49px -3px rgba(0,0,0,0.69);
+}
+.modal-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario{
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+    }
+        
+
+    label{
+        margin-right: 2rem;
+    }
+
+    input{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        margin-bottom: 1.4rem;
+    }
+    
+
+    i{
+        font-size: 2.4rem;
+    }
+
+    .email, .password{
+        display: flex;
+        // align-items: center;
+    }
+}
+
+
+.btn-primary{
+    color: #fff;
+    background-color: var(--gold);
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}

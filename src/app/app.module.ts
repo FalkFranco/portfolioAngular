@@ -11,7 +11,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { SocialComponent } from './components/social/social.component';
 import { LoginComponent } from './components/login/login.component';
 
@@ -29,7 +28,6 @@ import { LoginComponent } from './components/login/login.component';
     ProyectoComponent,
     FooterComponent,
     ContactoComponent,
-    ModalComponent,
     SocialComponent,
     LoginComponent,
   ],
