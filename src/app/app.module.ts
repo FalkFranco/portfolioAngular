@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { SocialComponent } from './components/social/social.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -30,6 +31,7 @@ import { LoginComponent } from './components/login/login.component';
     ContactoComponent,
     SocialComponent,
     LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
